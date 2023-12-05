@@ -5,16 +5,16 @@ import Items from "../components/home/Items";
 import Product from "../components/home/Product";
 import MostPopular from "../components/home/MostPopular";
 
-const HomeScreen = ({navigation}) => {
+const HomeScreen = ({ navigation }) => {
     return (
-        <ScrollView>
-            <SafeAreaView style={{ backgroundColor: "#ff6d6ddd" }}>
+        <SafeAreaView style={{ backgroundColor: "#ff6d6ddd" }}>
+            <ScrollView showsVerticalScrollIndicator={false}>
                 <Header />
                 <Items />
                 <Product />
                 <MostPopular />
-            </SafeAreaView>
-        </ScrollView>
+            </ScrollView>
+        </SafeAreaView>
     );
 };
 
