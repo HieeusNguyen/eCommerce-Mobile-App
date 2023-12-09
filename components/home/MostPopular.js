@@ -3,7 +3,7 @@ import React from "react";
 import { PRODUCTS } from "../../data/products";
 import { TouchableOpacity } from "react-native";
 const windowWidth = Dimensions.get("window").width;
-const MostPopular = () => {
+const MostPopular = ({ navigation }) => {
     return (
         <View style={{ marginHorizontal: 20, marginTop: 45 }}>
             <View
@@ -33,6 +33,13 @@ const MostPopular = () => {
                     <TouchableOpacity
                         key={index}
                         style={{ width: windowWidth * 0.44, height: 300 }}
+                        onPress={() =>
+                            navigation.push("ProductScreen", {
+                                image: product.image,
+                                name: product.name,
+                                price: product.price,
+                            })
+                        }
                     >
                         <Image
                             source={product.image}

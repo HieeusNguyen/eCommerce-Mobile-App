@@ -4,7 +4,7 @@ import React from 'react'
 const ProfileScreen = () => {
   return (
     <SafeAreaView>
-      <Text>ProfileScreen</Text>
+      
     </SafeAreaView>
   )
 }

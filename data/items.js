@@ -1,17 +1,17 @@
 export const ITEMS = [
     {
-        name: "All"
+        name: "All",
     },
     {
-        name: "Lips"
+        name: "Lips",
     },
     {
-        name: "Skin"
+        name: "Skin",
     },
     {
-        name: "Hair"
+        name: "Hair",
     },
     {
-        name: "Nails"
+        name: "Nails",
     },
-]
+];

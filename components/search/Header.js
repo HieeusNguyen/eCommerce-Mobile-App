@@ -13,7 +13,7 @@ const Header = ({ navigation }) => {
                 paddingBottom: 18,
             }}
         >
-            <TouchableOpacity onPress={() => navigation.goBack()}>
+            <TouchableOpacity onPress={() => navigation.goBack()}>
                 <Image
                     source={require("../../assets/icon/back.png")}
                     style={{ width: 36, height: 36 }}

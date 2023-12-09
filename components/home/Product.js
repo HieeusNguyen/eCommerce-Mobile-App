@@ -1,12 +1,22 @@
-import { View, Text, Image } from "react-native";
+import { View, Text, Image, TouchableOpacity } from "react-native";
 import React from "react";
 import { PRODUCTS } from "../../data/products";
 
-const Product = () => {
+const Product = ({ navigation }) => {
     return (
         <View style={{ marginTop: 30, alignItems: "center" }}>
             {PRODUCTS.slice(0, 1).map((product, index) => (
-                <View style={{ alignItems: "center" }} key={index}>
+                <TouchableOpacity
+                    style={{ alignItems: "center" }}
+                    key={index}
+                    onPress={() =>
+                        navigation.push("ProductScreen", {
+                            image: product.image,
+                            name: product.name,
+                            price: product.price,
+                        })
+                    }
+                >
                     <Image source={product.image} />
                     <Text
                         style={{
@@ -20,7 +30,7 @@ const Product = () => {
                     <Text style={{ fontSize: 20, fontWeight: "300" }}>
                         {product.price}
                     </Text>
-                </View>
+                </TouchableOpacity>
             ))}
         </View>
     );

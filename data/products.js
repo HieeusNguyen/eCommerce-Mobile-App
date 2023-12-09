@@ -1,53 +1,53 @@
 export const PRODUCTS = [
     {
-        name: 'Black Rouge V6',
+        name: "Black Rouge V6",
         price: "$120",
-        image: require('../assets/products/product1.png'),
+        image: require("../assets/products/product1.png"),
     },
     {
-        name: 'Black Rouge V61',
+        name: "Black Rouge V61",
         price: "$120",
-        image: require('../assets/products/product2.jpeg'),
+        image: require("../assets/products/product2.jpeg"),
     },
     {
-        name: 'Black Rouge V62',
+        name: "Black Rouge V62",
         price: "$120",
-        image: require('../assets/products/product3.jpeg'),
+        image: require("../assets/products/product3.jpeg"),
     },
     {
-        name: 'Black Rouge V63',
+        name: "Black Rouge V63",
         price: "$120",
-        image: require('../assets/products/product4.jpeg'),
+        image: require("../assets/products/product4.jpeg"),
     },
     {
-        name: 'Black Rouge V64',
+        name: "Black Rouge V64",
         price: "$120",
-        image: require('../assets/products/product5.jpeg'),
+        image: require("../assets/products/product5.jpeg"),
     },
     {
-        name: 'Black Rouge V65',
+        name: "Black Rouge V65",
         price: "$120",
-        image: require('../assets/products/product6.jpeg'),
+        image: require("../assets/products/product6.jpeg"),
     },
     {
-        name: 'Black Rouge V66',
+        name: "Black Rouge V66",
         price: "$120",
-        image: require('../assets/products/product7.jpeg'),
+        image: require("../assets/products/product7.jpeg"),
     },
     {
-        name: 'Black Rouge V67',
+        name: "Black Rouge V67",
         price: "$120",
-        image: require('../assets/products/product8.jpeg'),
+        image: require("../assets/products/product8.jpeg"),
     },
 
     {
-        name: 'Black Rouge V68',
+        name: "Black Rouge V68",
         price: "$120",
-        image: require('../assets/products/product9.jpeg'),
+        image: require("../assets/products/product9.jpeg"),
     },
     {
-        name: 'Black Rouge V69',
+        name: "Black Rouge V69",
         price: "$120",
-        image: require('../assets/products/product10.jpeg'),
+        image: require("../assets/products/product10.jpeg"),
     },
-]
+];

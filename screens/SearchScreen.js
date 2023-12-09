@@ -4,13 +4,13 @@ import Header from "../components/search/Header";
 import SearchBox from "../components/search/SearchBox";
 import SearchContent from "../components/search/SearchContent";
 
-const SearchScreen = ({navigation}) => {
+const SearchScreen = ({ navigation }) => {
     return (
         <SafeAreaView style={{ backgroundColor: "#ff6d6ddd" }}>
             <Header navigation={navigation} />
             <ScrollView>
                 <SearchBox />
-                <SearchContent />
+                <SearchContent navigation={navigation} />
             </ScrollView>
         </SafeAreaView>
     );

@@ -10,7 +10,7 @@ import React from "react";
 import { PRODUCTS } from "../../data/products";
 const windowWidth = Dimensions.get("window").width;
 
-const SearchContent = () => {
+const SearchContent = ({ navigation }) => {
     return (
         <View
             style={{ marginHorizontal: 10, marginTop: 10, paddingBottom: 50 }}
@@ -36,6 +36,13 @@ const SearchContent = () => {
                             backgroundColor: "#fff",
                             borderRadius: 15,
                         }}
+                        onPress={() =>
+                            navigation.push("ProductScreen", {
+                                image: product.image,
+                                name: product.name,
+                                price: product.price,
+                            })
+                        }
                     >
                         <Image
                             source={product.image}

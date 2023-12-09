@@ -1,9 +1,16 @@
-import { View, Text, ImageBackground, TextInput, Pressable,Image } from 'react-native'
-import React from 'react'
+import {
+    View,
+    Text,
+    ImageBackground,
+    TextInput,
+    Pressable,
+    Image,
+} from "react-native";
+import React from "react";
 
 const RegisterScreen = () => {
-  return (
-    <ImageBackground
+    return (
+        <ImageBackground
             source={require("../assets/logo/screen.png")}
             style={{ flex: 1 }}
         >
@@ -91,7 +98,7 @@ const RegisterScreen = () => {
                         }}
                     />
                 </View>
-                
+
                 <View style={{ alignItems: "flex-end" }}>
                     <Pressable
                         style={{
@@ -100,7 +107,7 @@ const RegisterScreen = () => {
                             borderWidth: 1,
                             borderColor: "#fff",
                             borderRadius: 10,
-                            marginTop: 30
+                            marginTop: 30,
                         }}
                     >
                         <Text style={{ fontSize: 20, color: "#fff" }}>
@@ -134,13 +141,13 @@ const RegisterScreen = () => {
                             textAlign: "center",
                         }}
                     >
-                        Already a Member? {" "}
+                        Already a Member?{" "}
                         <Text style={{ fontWeight: "700" }}>Login</Text>
                     </Text>
                 </View>
             </View>
         </ImageBackground>
-  )
-}
+    );
+};
 
-export default RegisterScreen
+export default RegisterScreen;

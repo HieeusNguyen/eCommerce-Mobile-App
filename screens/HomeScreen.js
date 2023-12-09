@@ -11,8 +11,8 @@ const HomeScreen = ({ navigation }) => {
             <ScrollView showsVerticalScrollIndicator={false}>
                 <Header navigation={navigation} />
                 <Items />
-                <Product />
-                <MostPopular />
+                <Product navigation={navigation} />
+                <MostPopular navigation={navigation} />
             </ScrollView>
         </SafeAreaView>
     );
