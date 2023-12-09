@@ -30,7 +30,8 @@ const MostPopular = () => {
                 }}
             >
                 {PRODUCTS.map((product, index) => (
-                    <TouchableOpacity key={index}
+                    <TouchableOpacity
+                        key={index}
                         style={{ width: windowWidth * 0.44, height: 300 }}
                     >
                         <Image

@@ -9,7 +9,7 @@ const HomeScreen = ({ navigation }) => {
     return (
         <SafeAreaView style={{ backgroundColor: "#ff6d6ddd" }}>
             <ScrollView showsVerticalScrollIndicator={false}>
-                <Header />
+                <Header navigation={navigation} />
                 <Items />
                 <Product />
                 <MostPopular />

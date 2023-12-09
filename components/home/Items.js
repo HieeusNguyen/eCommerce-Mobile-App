@@ -6,20 +6,27 @@ import { PRODUCTS } from "../../data/products";
 
 const Items = () => {
     return (
-        <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{marginTop: 30,marginLeft: 20 }}>
+        <ScrollView
+            horizontal
+            showsHorizontalScrollIndicator={false}
+            style={{ marginTop: 30, marginLeft: 20 }}
+        >
             {ITEMS.map((item, index) => (
-                <TouchableOpacity key={index}
+                <TouchableOpacity
+                    key={index}
                     style={{
                         paddingHorizontal: 15,
                         paddingVertical: 5,
                         borderWidth: 1,
                         marginRight: 20,
                         borderRadius: 25,
-                        borderColor:'#fff'
+                        borderColor: "#fff",
                     }}
                 >
                     <View>
-                        <Text style={{fontSize: 25, color:'#fff' }}>{item.name}</Text>
+                        <Text style={{ fontSize: 25, color: "#fff" }}>
+                            {item.name}
+                        </Text>
                     </View>
                 </TouchableOpacity>
             ))}

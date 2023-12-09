@@ -1,22 +1,36 @@
-import { View, Text, Image } from "react-native";
+import { View, Text, Image, TouchableOpacity } from "react-native";
 import React from "react";
 
-const Header = () => {
+const Header = ({ navigation }) => {
     return (
-        <View style={{ marginHorizontal: 10, flexDirection:'row', justifyContent:'space-between'}}>
-            <Image
-                source={require("../../assets/icon/menu.png")}
-                style={{ width: 36, height: 36 }}
-            />
-            <View style={{flexDirection:'row', gap:10}}>
+        <View
+            style={{
+                marginHorizontal: 10,
+                flexDirection: "row",
+                justifyContent: "space-between",
+            }}
+        >
+            <TouchableOpacity>
                 <Image
-                    source={require("../../assets/icon/search.png")}
+                    source={require("../../assets/icon/menu.png")}
                     style={{ width: 36, height: 36 }}
                 />
-                <Image
-                    source={require("../../assets/icon/bag.png")}
-                    style={{ width: 36, height: 36 }}
-                />
+            </TouchableOpacity>
+            <View style={{ flexDirection: "row", gap: 10 }}>
+                <TouchableOpacity
+                    onPress={() => navigation.navigate("SearchScreen")}
+                >
+                    <Image
+                        source={require("../../assets/icon/search.png")}
+                        style={{ width: 36, height: 36 }}
+                    />
+                </TouchableOpacity>
+                <TouchableOpacity>
+                    <Image
+                        source={require("../../assets/icon/bag.png")}
+                        style={{ width: 36, height: 36 }}
+                    />
+                </TouchableOpacity>
             </View>
         </View>
     );

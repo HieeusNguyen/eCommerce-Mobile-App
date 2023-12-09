@@ -6,6 +6,9 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import RateScreen from './screens/RateScreen';
 import NotifyScreen from './screens/NotifyScreen';
 import ProfileScreen from './screens/ProfileScreen';
+import LoginScreen from './screens/LoginScreen';
+import RegisterScreen from './screens/RegisterScreen';
+import SearchScreen from './screens/SearchScreen';
 
 
 const Stack = createNativeStackNavigator();
@@ -29,9 +32,12 @@ const SignedInStack = () => {
         <Stack.Navigator initialRouteName="Home"
                 screenOptions={{ headerShown: false }}>
         <Stack.Screen name="MyTabs" component={MyTabs} />
+        <Stack.Screen name="LoginScreen" component={LoginScreen} />
+        <Stack.Screen name="RegisterScreen" component={RegisterScreen} />
+        <Stack.Screen name="SearchScreen" component={SearchScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   )
 }
 
-export default SignedInStack
+export default SignedInStack 
