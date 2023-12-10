@@ -9,7 +9,7 @@ import {
 import React from "react";
 import { PAYMENT } from "../data/pay";
 
-const PaymentScreen = ({navigation}) => {
+const PaymentScreen = ({ navigation }) => {
     return (
         <SafeAreaView>
             <View
@@ -58,10 +58,20 @@ const PaymentScreen = ({navigation}) => {
                     marginTop: 320,
                     marginHorizontal: 20,
                     padding: 10,
-                    borderRadius:5
+                    borderRadius: 5,
                 }}
+                onPress={() => navigation.navigate("OrderSuccess")}
             >
-                <Text style={{fontSize: 24, fontWeight:'600', color:'#fff', textAlign:'center'}}>CONTINUE</Text>
+                <Text
+                    style={{
+                        fontSize: 24,
+                        fontWeight: "600",
+                        color: "#fff",
+                        textAlign: "center",
+                    }}
+                >
+                    CONTINUE
+                </Text>
             </Pressable>
         </SafeAreaView>
     );

@@ -4,12 +4,13 @@ import {
     ImageBackground,
     TextInput,
     Pressable,
+    TouchableOpacity,
 } from "react-native";
 import React from "react";
 import { Dimensions } from "react-native";
 import { Image } from "react-native";
 
-const LoginScreen = () => {
+const LoginScreen = ({ navigation }) => {
     return (
         <ImageBackground
             source={require("../assets/logo/screen.png")}
@@ -92,6 +93,7 @@ const LoginScreen = () => {
                             borderColor: "#fff",
                             borderRadius: 10,
                         }}
+                        onPress={() => navigation.navigate("MyTabs")}
                     >
                         <Text style={{ fontSize: 20, color: "#fff" }}>
                             Login
@@ -116,17 +118,19 @@ const LoginScreen = () => {
                             style={{ width: 30, height: 30 }}
                         />
                     </View>
-                    <Text
-                        style={{
-                            fontSize: 16,
-                            color: "#fff",
-                            width: 80,
-                            textAlign: "center",
-                        }}
-                    >
-                        New Here?{" "}
-                        <Text style={{ fontWeight: "700" }}>Register</Text>
-                    </Text>
+                    <TouchableOpacity onPress={() => navigation.navigate("RegisterScreen")}>
+                        <Text
+                            style={{
+                                fontSize: 16,
+                                color: "#fff",
+                                width: 80,
+                                textAlign: "center",
+                            }}
+                        >
+                            New Here?{" "}
+                            <Text style={{ fontWeight: "700" }}>Register</Text>
+                        </Text>
+                    </TouchableOpacity>
                 </View>
             </View>
         </ImageBackground>

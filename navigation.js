@@ -12,6 +12,8 @@ import SearchScreen from "./screens/SearchScreen";
 import ProductScreen from "./screens/ProductScreen";
 import CartScreen from "./screens/CartScreen";
 import PaymentScreen from "./screens/PaymentScreen";
+import OrderSuccessScreen from "./screens/OrderSuccessScreen";
+import SplashScreen from "./screens/SplashScreen";
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -31,7 +33,7 @@ const SignedInStack = () => {
     return (
         <NavigationContainer>
             <Stack.Navigator
-                initialRouteName="Home"
+                initialRouteName="Splash"
                 screenOptions={{ headerShown: false }}
             >
                 <Stack.Screen name="MyTabs" component={MyTabs} />
@@ -44,6 +46,11 @@ const SignedInStack = () => {
                 <Stack.Screen name="ProductScreen" component={ProductScreen} />
                 <Stack.Screen name="CartScreen" component={CartScreen} />
                 <Stack.Screen name="Payment" component={PaymentScreen} />
+                <Stack.Screen
+                    name="OrderSuccess"
+                    component={OrderSuccessScreen}
+                />
+                <Stack.Screen name="Splash" component={SplashScreen} />
             </Stack.Navigator>
         </NavigationContainer>
     );

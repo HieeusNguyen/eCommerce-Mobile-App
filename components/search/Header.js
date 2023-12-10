@@ -22,7 +22,7 @@ const Header = ({ navigation }) => {
             <Text style={{ color: "#fff", fontSize: 18, fontWeight: "700" }}>
                 Search Product
             </Text>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate("CartScreen")}>
                 <Image
                     source={require("../../assets/icon/bag.png")}
                     style={{ width: 36, height: 36 }}

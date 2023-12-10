@@ -5,13 +5,17 @@ import { Image } from "react-native";
 import { BRAND } from "../data/brand";
 import { TouchableOpacity } from "react-native";
 
-const SplashScreen = () => {
+const SplashScreen = ({ navigation }) => {
     return (
         <SafeAreaView style={{ backgroundColor: "#ff6d6ddd", flex: 1 }}>
-            <Image
-                source={require("../assets/logo/logo.png")}
-                style={{ alignSelf: "center", marginTop: 220 }}
-            />
+            <TouchableOpacity
+                onPress={() => navigation.navigate("LoginScreen")}
+            >
+                <Image
+                    source={require("../assets/logo/logo.png")}
+                    style={{ alignSelf: "center", marginTop: 220 }}
+                />
+            </TouchableOpacity>
             <View
                 style={{
                     flexDirection: "row",

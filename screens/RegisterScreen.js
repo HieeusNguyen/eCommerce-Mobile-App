@@ -5,10 +5,11 @@ import {
     TextInput,
     Pressable,
     Image,
+    TouchableOpacity,
 } from "react-native";
 import React from "react";
 
-const RegisterScreen = () => {
+const RegisterScreen = ({ navigation }) => {
     return (
         <ImageBackground
             source={require("../assets/logo/screen.png")}
@@ -133,17 +134,21 @@ const RegisterScreen = () => {
                             style={{ width: 30, height: 30 }}
                         />
                     </View>
-                    <Text
-                        style={{
-                            fontSize: 16,
-                            color: "#fff",
-                            width: 120,
-                            textAlign: "center",
-                        }}
+                    <TouchableOpacity
+                        onPress={() => navigation.navigate("LoginScreen")}
                     >
-                        Already a Member?{" "}
-                        <Text style={{ fontWeight: "700" }}>Login</Text>
-                    </Text>
+                        <Text
+                            style={{
+                                fontSize: 16,
+                                color: "#fff",
+                                width: 120,
+                                textAlign: "center",
+                            }}
+                        >
+                            Already a Member?{" "}
+                            <Text style={{ fontWeight: "700" }}>Login</Text>
+                        </Text>
+                    </TouchableOpacity>
                 </View>
             </View>
         </ImageBackground>
