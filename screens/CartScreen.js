@@ -102,6 +102,7 @@ const CartScreen = ({ navigation }) => {
                         borderRadius: 5,
                         marginTop: 20,
                     }}
+                    onPress={() => navigation.navigate("Payment")}
                 >
                     <Text
                         style={{
