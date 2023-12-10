@@ -12,9 +12,9 @@ const windowHeight = Dimensions.get("window").height;
 
 const ProductScreen = ({ route, navigation }) => {
     const { image, name, price } = route.params;
-    const [count, setCount] = useState(1);
+    const [count, setCount] = useState(1);
     return (
-        <ImageBackground style={{ backgroundColor: "#ff6d6ddd", flex: 1 }}>
+        <ImageBackground style={{ backgroundColor: "#FF6D6DB2", flex: 1 }}>
             <SafeAreaView>
                 <View
                     style={{
@@ -115,7 +115,7 @@ const ProductScreen = ({ route, navigation }) => {
                             borderRadius: 99,
                         }}
                     >
-                        <TouchableOpacity onPress={() => setCount(count - 1)}>
+                        <TouchableOpacity onPress={() => setCount(count - 1)}>
                             <Text style={{ fontSize: 18 }}>-</Text>
                         </TouchableOpacity>
                         <Text style={{ fontSize: 18 }}>{count}</Text>

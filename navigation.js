@@ -10,6 +10,7 @@ import LoginScreen from "./screens/LoginScreen";
 import RegisterScreen from "./screens/RegisterScreen";
 import SearchScreen from "./screens/SearchScreen";
 import ProductScreen from "./screens/ProductScreen";
+import CartScreen from "./screens/CartScreen";
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -40,6 +41,8 @@ const SignedInStack = () => {
                 />
                 <Stack.Screen name="SearchScreen" component={SearchScreen} />
                 <Stack.Screen name="ProductScreen" component={ProductScreen} />
+                <Stack.Screen name="CartScreen" component={CartScreen} />
+
             </Stack.Navigator>
         </NavigationContainer>
     );

@@ -16,7 +16,7 @@ const ProfileScreen = ({navigation}) => {
         <SafeAreaView>
             <View
                 style={{
-                    backgroundColor: "#ff6d6ddd",
+                    backgroundColor: "#FF6D6DB2",
                     height: 0.3 * windowHeight,
                     position: "relative",
                     paddingTop: 20,

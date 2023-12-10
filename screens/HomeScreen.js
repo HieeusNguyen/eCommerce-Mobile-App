@@ -7,7 +7,7 @@ import MostPopular from "../components/home/MostPopular";
 
 const HomeScreen = ({ navigation }) => {
     return (
-        <SafeAreaView style={{ backgroundColor: "#ff6d6ddd" }}>
+        <SafeAreaView style={{ backgroundColor: "#FF6D6DB2" }}>
             <ScrollView showsVerticalScrollIndicator={false}>
                 <Header navigation={navigation} />
                 <Items />

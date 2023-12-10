@@ -25,7 +25,7 @@ const Header = ({ navigation }) => {
                         style={{ width: 36, height: 36 }}
                     />
                 </TouchableOpacity>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={() => navigation.navigate('CartScreen')}>
                     <Image
                         source={require("../../assets/icon/bag.png")}
                         style={{ width: 36, height: 36 }}

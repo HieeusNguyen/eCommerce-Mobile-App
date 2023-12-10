@@ -6,7 +6,7 @@ import SearchContent from "../components/search/SearchContent";
 
 const SearchScreen = ({ navigation }) => {
     return (
-        <SafeAreaView style={{ backgroundColor: "#ff6d6ddd" }}>
+        <SafeAreaView style={{ backgroundColor: "#FF6D6DB2" }}>
             <Header navigation={navigation} />
             <ScrollView>
                 <SearchBox />
